@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 async function startServer() {
-    await connectDtabase();
+    await connectDatabase();
     app.listen(port, () => {
         console.log(`Server is running on http://localhost:${port}`);
     });
